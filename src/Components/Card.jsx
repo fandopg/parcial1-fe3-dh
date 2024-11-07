@@ -1,8 +1,11 @@
-const Card = () => {
+import imagenLibro from "../assets/libro.jpg"
+const Card = ({lector:{name, book}}) => {
+  
   return (
     <div>
-      <h1>Tarjeta de ejemplo</h1>
-      <form></form>
+      <img src={imagenLibro} alt="imagen libro" width="300" />
+      <h2>Hola {name}</h2>
+      <h3>Registramos: "{book}" como tu libro favorito!</h3>
     </div>
   );
 };
